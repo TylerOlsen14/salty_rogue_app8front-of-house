@@ -10,7 +10,7 @@ class RecordList extends Component{
   }
 
   getRecords = async () => {
-    await fetch('http://localhost:5000/')
+    await fetch('https://salty-rogue-kitchen3.herokuapp.com/')
       .then(response => {
         return response.json();
       })
@@ -20,7 +20,7 @@ class RecordList extends Component{
       }
   
   onDeleteClick = async (_id) => {
-    await fetch('http://localhost:5000/' + _id, {
+    await fetch('https://salty-rogue-kitchen3.herokuapp.com/' + _id, {
       method: "DELETE"
     })
     .then(resp => {

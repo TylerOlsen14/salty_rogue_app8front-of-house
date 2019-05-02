@@ -39,7 +39,7 @@ class RecordModal extends Component {
 
   onSubmit = async e => {
     e.preventDefault();
-    await fetch(`http://localhost:5000/`, {
+    await fetch(`https://salty-rogue-kitchen3.herokuapp.com/`, {
       method: "POST",
       body: JSON.stringify(this.state),
       headers: {
